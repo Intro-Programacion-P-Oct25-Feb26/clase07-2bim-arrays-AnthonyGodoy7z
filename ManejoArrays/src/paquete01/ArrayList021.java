@@ -33,6 +33,7 @@ public class ArrayList021 {
         String auxiliar;
         for (int i = 0; i < nombres.size(); i++) {
             auxiliar = nombres.get(i);
+            auxiliar = convertirMinusculas(auxiliar);
             auxiliar = auxiliar.substring(0, 1);
             arreglo.add(auxiliar);
         }
@@ -65,7 +66,11 @@ public class ArrayList021 {
         String miValor = c.toUpperCase();
         return miValor;
     }
-        
+    
+    public static String convertirMinusculas(String a){
+        String miValor = a.toLowerCase();
+        return miValor;
+    }
     public static String obtenerCadenaFinal(ArrayList<String> lista){
         String cadenaFinal = "";
         
